@@ -1,14 +1,11 @@
 #include "asm.h"
-
-
-
 // GPIO 0 OUTPUT
 //GIPI 1 INPUT
-
+#define led_pin 0
+#define button 1
 void setup()
 {
-    // pinMode(button,INPUT);
-    // pinMode(led_pin, OUTPUT);
+    
     //set up OUTPUT via assembly
     confiure_input_GPIO_1();
     confiure_output_GPIO_0();
@@ -31,18 +28,17 @@ void loop()
     // delay(1000);
     //read_status_of_GPIO_1();
     //led_write_1();
-    //state = digitalRead(button);
+    // state = digitalRead(button);
 
     // if(state == HIGH)
     // {
     //     digitalWrite(led_pin,HIGH);
-    //     //led_write_1();
+    //     led_write_1();
     // }
     // else{
-    //     //led_write_0();
-    //     digitalWrite(led_pin,LOW);
+    //     led_write_0();
+    //     //digitalWrite(led_pin,LOW);
         
-    // }
+    //  }
    
-
 }
