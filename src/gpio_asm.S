@@ -10,6 +10,7 @@
 
 confiure_output_GPIO_0: // GPIO0
     //li s1,0x60009000  // dia chi IOMUX_BASE
+    
     la s0,0x60004000    // dia chi BASE_ADDRESS 
     addi t0,x0,1        // bit dau tien la bit 1 cua thanh ghi GPIO
     sw t0,0x0024(s0)    // set up che do OUTPUT
